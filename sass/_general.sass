@@ -1,0 +1,374 @@
+$bg-section: #e8ebf1
+
+.container
+    max-width: 1030px
+    margin: 0 auto
+    padding: 0 15px
+.header
+    background-color: $bg-section
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.07)
+.header__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 120px
+.header__logo,
+.footer__logo
+    a
+        font-family: 'Lato', sans-serif
+        font-size: 50px
+        color: #2aacc8
+    span
+        font-weight: 900
+        color: #000
+.header__menu
+    margin-right: 20px
+    li + li
+        margin-left: 50px
+    a
+     font-family: 'Arial', sans-serif
+     font-weight: 700
+     color: #000
+     font-size: 13px
+     line-height: 20px
+     text-transform: uppercase
+     padding-top: 9px
+     padding-bottom: 13px
+
+.header__drop-down.drop-down
+    margin-left: 39px
+.header__drop-down.drop-down + .header__drop-down.drop-down
+    margin-left: 12px
+.header__drop-down
+    position: relative
+.header__drop-down .drop-down__list li
+    margin-left: 0
+    display: block
+.drop-down__list
+    height: 0
+    overflow: hidden
+    opacity: 0
+    position: absolute
+    z-index: 1
+    width: 200px
+    background-color: #fff
+    border: 1px solid rgb(232, 235, 241)
+    border-bottom: 5px solid #2aacc8
+    border-top: none
+    box-shadow: 0 5px 0 0 rgba(42,172,200,0.004)
+    padding: 10px 5px
+    a
+        display: block
+        padding: 12px 0 11px 12px
+        font-weight: 400
+        text-transform: none
+        transition: all .3s
+        &:hover
+            color: #2aacc8
+.drop-down__list li + li a
+    border-top: 1px solid #e7e7e7
+.header__drop-down > a
+    position: relative
+    padding-left: 11px
+    padding-right: 26px
+    border-top: 5px solid transparent
+    transition: all .3s
+    &::after
+        content: ''
+        position: absolute
+        background-image: url(../img/down-arrow.png)
+        width: 7px
+        height: 5px
+        right: 8px
+        top: 15px
+.header__drop-down.drop-down:hover .drop-down__list
+    height: auto
+    overflow: hidden
+    opacity: 1
+    transition: all .3s
+.header__drop-down.drop-down:hover > a
+    color: #2aacc8
+    background-color: #fff
+    border-top: 5px solid #2aacc8
+.slider
+    background-color: #81e4ed
+    padding: 20px 0 10px
+.slider__inner
+
+.slider__item
+    min-height: 400px
+    background: url('../img/slider-bg.jpg') center center/cover no-repeat
+    padding-top: 100px
+    padding-left: 60px
+.slider__text
+    font-weight: 700
+    color: #fff
+    width: 300px
+    font-size: 50px
+.slick-dots li
+    margin: 0 9px
+    width: auto
+    height: auto
+.slick-dots li button
+    width: 14px
+    height: 14px
+    background-color: rgba(98,98,98,.5)
+    border-radius: 50%
+    &::before
+        display: none
+.slick-dots li.slick-active button
+    background-color: #fff
+.advantage
+    background-color: #e8ebf1
+    border-bottom: 1px solid #d9d9d9
+.advantage__inner
+    display: flex
+    justify-content: space-between
+    padding: 60px 0 50px
+.item
+    width: 220px
+    font-family: 'Arial', sans-serif
+    position: relative
+.item__title
+    font-weight: 700
+    line-height: 12px
+    text-transform: uppercase
+    padding: 10px 0 0 60px
+    margin-bottom: 20px
+.item__icon
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    top: 0
+    left: 0
+    width: 40px
+    height: 40px
+    background-color: #2aacc8
+    border-radius: 50%
+.telegram
+    margin-left: 3px
+.item__descr
+    color: #363636
+    font-size: 13px
+    line-height: 20px
+    margin-bottom: 25px
+.item__link
+    color: #2aacc8
+    font-size: 13px
+    line-height: 20px
+    padding-left: 15px
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 5px
+        height: 7px
+        background-image: url('../img/icons/arrow-right.svg')
+        top: 5px
+        left: 0
+.works__title,
+.comments__title,
+.clients__logo-title
+    font-family: 'Arial', sans-serif
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    padding-top: 25px
+    padding-left: 40px
+    margin-bottom: 20px
+    color: #000
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        background-image: url('../img/works/blue-cursor.svg')
+        width: 14px
+        height: 24px
+        top: 22px
+        left: 0
+.works__inner
+    padding: 20px 0 40px
+    border-top: 1px solid #dfe1e5
+    border-bottom: 1px solid #dfe1e5
+.slick-arrow
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #81e4ed
+    &::before
+        display: none
+    &:hover,
+    &:focus
+        background-color: #81e4ed
+.slick-next
+    top: -27px
+    right: 0
+.slick-prev
+    top: -27px
+    right: 30px
+    left: auto
+.works__inner-item
+    text-align: center
+.works__inner-box
+    display: inline-block
+    position: relative
+.works__inner-box:hover .works__inner-link
+    height: 80px
+.works__inner-link
+    height: 0px
+    background-color: #2aacc8
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    width: 100%
+    bottom: 0
+    overflow: hidden
+    transition: all .5s
+    a
+        margin: 0 15px
+.slick-list
+    margin-left: -15px
+    margin-right: -15px
+.clients
+    padding: 0 0 40px
+    font-family: 'Arial', sans-serif
+.clients__inner
+    display: flex
+    justify-content: space-between
+.comments
+    max-width: 440px
+.comments__title::before
+    width: 24px
+    height: 23px
+    background-image: url('../img/icons/comments.svg')
+    top: 23px
+    left: 0
+.clients__logo-title::before
+    width: 24px
+    height: 20px
+    background-image: url('../img/icons/clients.svg')
+.comments__descr
+    font-size: 14px
+    line-height: 24px
+    color: #363636
+.comments__descr span
+    display: block
+    font-style: italic
+    font-weight: 700
+    padding-top: 30px
+.clients__logo
+    max-width: 480px
+.clients__logo-inner
+    display: flex
+    flex-wrap: wrap
+.clients__logo-item
+    max-width: 160px
+    height: 99px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid rgb(232,235,241)
+    box-shadow: inset 0px 0px 25px 0px rgba(232, 235, 241, 0.004)
+.download
+    margin-top: 40px
+    padding: 30px 40px 30px 30px
+    border: 1px solid #81e4ed
+    background-color: #e8fcfe
+    display: flex
+    justify-content: space-between
+    align-items: center
+.download__descr
+    font-size: 16px
+    line-height: 26px
+    color: #363636
+    max-width: 620px
+.download__btn a
+    padding: 20px 20px 20px 70px
+    border: 1px solid rgb(42, 172, 200)
+    border-radius: 8px
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1)
+    background: linear-gradient( to top, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%)
+    font-size: 18px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        background-image: url('../img/icons/download.svg')
+        width: 29px
+        height: 26px
+        top: 16px
+        left: 18px
+.footer
+    background-color:#e8ebf1
+    border: 1px solid #d9d9d9
+    font-family: 'Arial', sans-serif
+    padding-top: 30px
+    padding-bottom: 40px
+.footer__inner
+    display: flex
+    justify-content: space-between
+    margin-bottom: 35px
+.footer__item-title
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+.footer__item-descr
+    padding-top: 25px
+    font-size: 14px
+    color: #363636
+.footer__item-content
+    width: 240px
+.footer__item-list
+    width: 115px
+.footer__list
+    padding-top: 10px
+.footer__list li
+    display: block
+    a
+        color: #363636
+        font-size: 14px
+        line-height: 26px
+.footer__item-contact
+    width: 140px
+.footer__address
+    padding-top: 25px
+    font-size: 14px
+    color: #363636
+    margin-bottom: 16px
+.footer__address span
+    display: block
+    font-weight: 700
+.footer__phone
+    font-size: 14px
+    color: #363636
+.footer__item-social
+    width: 185px
+.footer__social
+    padding-top: 25px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.footer__bottom
+    display: flex
+    justify-content: space-between
+.footer__copy
+    width: 650px
+    font-size: 13px
+    line-height: 18px
+    color: #363636
+.header__menu-btn
+    width: 30px
+    display: none
+.header__menu-row
+    width: 100%
+    background-color: #000
+    height: 4px
+    margin-bottom: 4px
+
+
